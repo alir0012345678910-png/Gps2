@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPS Location Finder</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📍 GPS Location Finder</h1>
+
+<p class="subtitle">
+Find your current GPS coordinates
+</p>
+
+<div class="card">
+
+<div class="row">
+<label>Latitude</label>
+<input type="text" id="latitude" readonly>
+</div>
+
+<div class="row">
+<label>Longitude</label>
+<input type="text" id="longitude" readonly>
+</div>
+
+<div class="row">
+<label>Accuracy (meters)</label>
+<input type="text" id="accuracy" readonly>
+</div>
+
+<div class="row">
+<label>Status</label>
+<input type="text" id="status" readonly value="Waiting for location...">
+</div>
+
+<button onclick="getLocation()">
+Get Current Location
+</button>
+
+<button onclick="openMap()">
+Open in Google Maps
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
